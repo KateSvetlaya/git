@@ -7,8 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button>
-            
-        </Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Welcome to My Application" 
+                   FontSize="24" 
+                   HorizontalAlignment="Center" 
+                   Margin="10"/>
+
+        <Button Content="Click Me" 
+                Grid.Row="1" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="100" 
+                
+                Height="40"/>
     </Grid>
 </Window>
